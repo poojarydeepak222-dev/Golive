@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="GoLive mobile website builder" />
+  <title>GoLive — Mobile Website Builder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="brand"><span class="logo">G</span><span>GoLive</span></div>
+      <button class="publish" id="publishBtn">Publish</button>
+    </header>
+
+    <main class="workspace">
+      <section class="preview-wrap">
+        <div class="preview-label">LIVE PREVIEW</div>
+        <div class="phone" id="phonePreview">
+          <div class="site" id="sitePreview">
+            <div class="site-nav"><strong id="previewBrand">My Website</strong><button class="menu-dot">•••</button></div>
+            <div class="hero" id="heroPreview">
+              <span class="eyebrow">WELCOME</span>
+              <h1 id="previewTitle">Build your website.</h1>
+              <p id="previewText">Create a beautiful mobile website in minutes.</p>
+              <button class="hero-btn" id="previewButton">Get Started</button>
+            </div>
+            <div class="cards">
+              <div class="card"><b>Simple</b><span>Easy to edit</span></div>
+              <div class="card"><b>Mobile</b><span>Looks great anywhere</span></div>
+              <div class="card"><b>Live</b><span>Publish instantly</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <aside class="sidebar" aria-label="Builder tools">
+        <button class="tool active" data-panel="theme"><span>🎨</span>Theme</button>
+        <button class="tool" data-panel="content"><span>✏️</span>Content</button>
+        <button class="tool" data-panel="sections"><span>▦</span>Sections</button>
+        <button class="tool" data-panel="style"><span>✨</span>Style</button>
+        <button class="tool" data-panel="settings"><span>⚙️</span>Settings</button>
+      </aside>
+    </main>
+
+    <div class="panel-backdrop" id="backdrop"></div>
+    <section class="editor-panel" id="editorPanel" aria-hidden="true">
+      <div class="panel-head"><div><span class="panel-kicker">EDIT</span><h2 id="panelTitle">Theme</h2></div><button id="closePanel" class="close">×</button></div>
+      <div id="panelBody"></div>
+    </section>
+
+    <div class="toast" id="toast"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
